@@ -1,1 +1,2 @@
-export { textRobot } from './text-robot'
+export { textRobot } from './text'
+export { userInputRobot } from './user-input'
