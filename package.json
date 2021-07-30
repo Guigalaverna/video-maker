@@ -4,7 +4,11 @@
   "main": "index.js",
   "repository": "https://github.com/Guigalaverna/video-maker",
   "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules/ --respawn src/index.ts"
+  },
   "devDependencies": {
+    "ts-node-dev": "^1.1.8",
     "typescript": "^4.3.5"
   }
 }
