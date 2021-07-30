@@ -1,28 +1,8 @@
-import * as readline from 'readline-sync'
+import * as robots from './robots'
 
 (() => {
-  let searchTerm: string
-  let prefix: string
-  
-  searchTerm = askAndReturnSearchTerm();
-  prefix = askAndReturnPrefix();
-  
-  function askAndReturnSearchTerm() {
-    return readline.question('Type a Wikipedia term: ')
-  }
-
-  function askAndReturnPrefix() {
-    const prefixes = ['Who is', 'What is', 'The history of']
-
-    const selectedPrefix = readline.keyInSelect(prefixes, 'Choose one option: ')
-
-    return prefixes[selectedPrefix]
-  }
-  
-  const userInput = {
-    searchTerm,
-    prefix
-  }
-
-  console.log(userInput)
+  let userInput
+  // Initialize robots
+  userInput = robots.userInputRobot()
+  robots.textRobot(userInput)
 })()
