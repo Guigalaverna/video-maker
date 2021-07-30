@@ -19,10 +19,10 @@ import * as readline from 'readline-sync'
     return prefixes[selectedPrefix]
   }
   
-  const content = {
+  const userInput = {
     searchTerm,
     prefix
   }
 
-  console.log(content)
+  console.log(userInput)
 })()
