@@ -1,0 +1,1 @@
+export { textRobot } from './text-robot'
